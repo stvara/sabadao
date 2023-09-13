@@ -21,12 +21,11 @@ export default function Home() {
         </div>
         <div className=' min-h-screen flex-col items-left justify-between p-24'>
 
-          {canais.map((item, index) => (
-            <ul>
-              <li key={index}>
+          {canais.map((item, key) => (
+                <div key = {key}>
                 <InfoCanais nome={item.nome} conteudo={item.conteudo} tema={item.tema} img={item.img} link={item.link}></InfoCanais>
-              </li>
-            </ul>))}
+                </div>
+              ))}
 
         </div>
       </div>

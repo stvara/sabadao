@@ -1,6 +1,7 @@
 ﻿import React from "react";
+import Image from 'next/image'
 
-const InfoCanais = ({key,nome,conteudo,tema,img,link}) => {
+const InfoCanais = ({nome,conteudo,tema,img,link}:{nome :string,conteudo:string,tema:string,img:string,link:string} ) => {
     return (
         <div className='flex'>
             <div className='w-1/2'>
