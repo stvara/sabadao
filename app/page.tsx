@@ -13,18 +13,18 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className='fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none'>
-        <div className='z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex'>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+      <div className=''>
+        <div className='z-10 w-full max-w-5xl items-center  font-mono text-sm '>
           <h1 className='text-3xl'>Ajuntador de canais </h1><br />
           <p>Projeto iniciado em next.js no sábado do pão de alho. <br />Onde pretendo juntas os conteúdos que eu termino esquecendo onde estão.</p>
         </div>
         <div className=' min-h-screen flex-col items-left justify-between p-24'>
           {canais.map((item, index) => (
-            <tr key={index}>
-              <InfoCanais nome={item.nome} conteudo={item.conteudo} tema={item.tema} img={item.img} link={item.link}></InfoCanais>
+            
+              <InfoCanais key={index} nome={item.nome} conteudo={item.conteudo} tema={item.tema} img={item.img} link={item.link}></InfoCanais>
 
-            </tr>))}
+            ))}
         </div>
       </div>
     </main>
