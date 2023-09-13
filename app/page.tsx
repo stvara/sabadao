@@ -20,11 +20,18 @@ export default function Home() {
           <p>Projeto iniciado em next.js no sábado do pão de alho. <br />Onde pretendo juntas os conteúdos que eu termino esquecendo onde estão.</p>
         </div>
         <div className=' min-h-screen flex-col items-left justify-between p-24'>
-          {canais.map((item, index) => (
-            
-              <InfoCanais key={index} nome={item.nome} conteudo={item.conteudo} tema={item.tema} img={item.img} link={item.link}></InfoCanais>
-
+          <table>
+            <thead></thead>
+            <tbody>
+            {canais.map((item, index) => (
+              <tr >
+                <td key ={index}>
+                  <InfoCanais key={index} nome={item.nome} conteudo={item.conteudo} tema={item.tema} img={item.img} link={item.link}></InfoCanais>
+                </td>
+              </tr>
             ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </main>
