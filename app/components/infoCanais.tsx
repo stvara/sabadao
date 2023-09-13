@@ -17,4 +17,4 @@ const InfoCanais = ({nome,conteudo,tema,img,link}) => {
     );
 };
 
-export default InfoCanais;
+export default InfoCanais; 
