@@ -24,7 +24,7 @@ export default function Home() {
           {canais.map((item, index) => (
             <ul>
               <li key={index}>
-                <InfoCanais key={index} nome={item.nome} conteudo={item.conteudo} tema={item.tema} img={item.img} link={item.link}></InfoCanais>
+                <InfoCanais nome={item.nome} conteudo={item.conteudo} tema={item.tema} img={item.img} link={item.link}></InfoCanais>
               </li>
             </ul>))}
 
