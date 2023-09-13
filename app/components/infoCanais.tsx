@@ -1,6 +1,6 @@
 ﻿import React from "react";
 
-const InfoCanais = ({nome,conteudo,tema,img,link}) => {
+const InfoCanais = ({key,nome,conteudo,tema,img,link}) => {
     return (
         <div className='flex'>
             <div className='w-1/2'>
